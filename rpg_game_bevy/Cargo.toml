@@ -21,8 +21,9 @@ strip = "debuginfo"
 
 [dependencies]
 # Remove dynamic_linking for the release build
-#bevy = { version = "0.16.1", features = ["dynamic_linking"] }
-bevy = { version = "0.16.1" }
+# bevy = { version = "0.16.1" }
+bevy = { version = "0.16.1", features = ["dynamic_linking"] }
+bevy_dylib = "0.16.1"
 bevy_ecs_tiled = "0.7.3"
 
 [target.x86_64-pc-windows-msvc]
